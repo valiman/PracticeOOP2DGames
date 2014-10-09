@@ -1,0 +1,8 @@
+C:\Users\knavlima\Documents\Visual Studio 2008\Projects\ProgrammingPractice\ProgrammingPractice\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\knavlima\Documents\Visual Studio 2008\Projects\ProgrammingPractice\ProgrammingPractice\obj\Debug\ProgrammingPractice.Form1.resources
+C:\Users\knavlima\Documents\Visual Studio 2008\Projects\ProgrammingPractice\ProgrammingPractice\obj\Debug\ProgrammingPractice.Properties.Resources.resources
+C:\Users\knavlima\Documents\Visual Studio 2008\Projects\ProgrammingPractice\ProgrammingPractice\obj\Debug\ProgrammingPractice.csproj.GenerateResource.Cache
+C:\Users\knavlima\Documents\Visual Studio 2008\Projects\ProgrammingPractice\ProgrammingPractice\bin\Debug\ProgrammingPractice.exe
+C:\Users\knavlima\Documents\Visual Studio 2008\Projects\ProgrammingPractice\ProgrammingPractice\bin\Debug\ProgrammingPractice.pdb
+C:\Users\knavlima\Documents\Visual Studio 2008\Projects\ProgrammingPractice\ProgrammingPractice\obj\Debug\ProgrammingPractice.exe
+C:\Users\knavlima\Documents\Visual Studio 2008\Projects\ProgrammingPractice\ProgrammingPractice\obj\Debug\ProgrammingPractice.pdb
