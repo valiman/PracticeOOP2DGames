@@ -6,12 +6,16 @@ using System.Drawing;
 
 namespace ProgrammingPractice
 {
-    public class Player : GameObject
+    public class Player
     {
-        public Player(PointF Location, Size size)
-            : base(Location)
+        public int bulletCount;
+        public Size Size { get; set; }
+        public PointF Location { get; set; }
+        public Player(PointF location, Size size)
         {
             this.Size = size;
+            this.Location = location;
+            this.bulletCount = 0;
         }
     }
 }

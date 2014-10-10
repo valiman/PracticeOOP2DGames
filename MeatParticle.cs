@@ -6,10 +6,9 @@ using System.Drawing;
 
 namespace ProgrammingPractice
 {
-    public class Bullet : GameObject
+    public class MeatParticle : GameObject
     {
-        public Bullet(PointF Location, PointF Destination, Size size)
-            : base(Location, Destination, size)
+        public MeatParticle(PointF Location, PointF Destination, Size size) : base(Location, Destination, size)
         {
 
         }

@@ -13,6 +13,7 @@ namespace ProgrammingPractice
 {
     public partial class Form1 : Form
     {
+        float speecIncrement = 5.5f;
         int fps = 0;
         Stopwatch sw = new Stopwatch();
         DrawManager drawMgr;
@@ -58,7 +59,11 @@ namespace ProgrammingPractice
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
-             ObjectManager.bulletList.Add(new Bullet(ObjectManager.objPlayer.Location, new PointF(MousePos.X, MousePos.Y)));
+            if (ObjectManager.Player.bulletCount > 0)
+            {
+                ObjectManager.Player.bulletCount--;
+                ObjectManager.bulletList.Add(new Bullet(ObjectManager.Player.Location, new PointF(MousePos.X, MousePos.Y), new Size(5,5)));   
+            }
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -66,20 +71,20 @@ namespace ProgrammingPractice
             switch (e.KeyCode)
             {
                 case Keys.W:
-                    ObjectManager.objPlayer.Location = new PointF(ObjectManager.objPlayer.Location.X,
-                                                                  ObjectManager.objPlayer.Location.Y - 1);
+                    ObjectManager.Player.Location = new PointF(ObjectManager.Player.Location.X,
+                                                                  ObjectManager.Player.Location.Y - speecIncrement);
                     break;
                 case Keys.S:
-                    ObjectManager.objPlayer.Location = new PointF(ObjectManager.objPlayer.Location.X,
-                                                                  ObjectManager.objPlayer.Location.Y + 1);
+                    ObjectManager.Player.Location = new PointF(ObjectManager.Player.Location.X,
+                                                                  ObjectManager.Player.Location.Y + speecIncrement);
                     break;
                 case Keys.D:
-                    ObjectManager.objPlayer.Location = new PointF(ObjectManager.objPlayer.Location.X + 1,
-                                                                  ObjectManager.objPlayer.Location.Y);
+                    ObjectManager.Player.Location = new PointF(ObjectManager.Player.Location.X + speecIncrement,
+                                                                  ObjectManager.Player.Location.Y);
                     break;
                 case Keys.A:
-                    ObjectManager.objPlayer.Location = new PointF(ObjectManager.objPlayer.Location.X - 1,
-                                                                  ObjectManager.objPlayer.Location.Y);
+                    ObjectManager.Player.Location = new PointF(ObjectManager.Player.Location.X - speecIncrement,
+                                                                  ObjectManager.Player.Location.Y);
                     break;
                 default:
                     break;
